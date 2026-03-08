@@ -18,13 +18,13 @@ This tool processes chat logs, converts them into structured Markdown files, and
 ---
 
 ## Workflow
-AI Chat Log
-↓
-Text Processing
-↓
-Markdown Conversion
-↓
-Save to Obsidian Vault
+AI Chat Log  
+↓  
+Text Processing  
+↓  
+Markdown Conversion  
+↓  
+Save to Obsidian Vault  
 
 
 The tool transforms conversational logs into structured Markdown notes that can be easily managed inside Obsidian.
