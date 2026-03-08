@@ -2,6 +2,7 @@
 A tool that organizes AI chat logs and converts them into Markdown notes for use in Obsidian.
 AI conversations often contain useful insights and technical explanations, but chat-based formats make it difficult to search, organize, and reuse the information.
 This tool processes chat logs, converts them into structured Markdown files, and saves them into an Obsidian vault so the content can be managed as a personal knowledge base.
+
 Features
 
 Organizes AI chat logs
