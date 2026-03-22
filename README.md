@@ -90,6 +90,8 @@ AIとの対話は有益な情報源ですが、そのままのログでは体系
 python chat_to_obsidian.py
 ```
 
+---
+
 実行後、outputフォルダにMarkdownファイルが生成されます。
 
 ## リポジトリ構成
