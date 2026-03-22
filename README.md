@@ -1,86 +1,102 @@
 # AI Chat Log to Obsidian Converter
 
-A tool that organizes AI chat logs and converts them into Markdown notes for use in Obsidian.
+AIのチャットログを整理し、Obsidianで活用できるMarkdownノートに変換するツールです。
 
-AI conversations often contain useful insights and technical explanations, but chat-based formats make it difficult to search, organize, and reuse the information.  
-This tool processes chat logs, converts them into structured Markdown files, and saves them into an Obsidian vault so the content can be managed as a personal knowledge base.
-
----
-
-## Features
-
-- Organizes AI chat logs
-- Converts chat content into Markdown format
-- Automatically saves notes to an Obsidian vault
-- Generates notes with date and title
-- Enables reuse of conversations as knowledge assets
+AIとの会話には有用な知識や技術的な情報が多く含まれていますが、チャット形式のままでは検索・整理・再利用が難しいという課題があります。
+本ツールはチャットログを処理し、構造化されたMarkdownファイルに変換してObsidianのVaultに保存することで、個人のナレッジベースとして活用できるようにします。
 
 ---
 
-## Workflow
-AI Chat Log  
-↓  
-Text Processing  
-↓  
-Markdown Conversion  
-↓  
-Save to Obsidian Vault  
+## 主な機能
 
-
-The tool transforms conversational logs into structured Markdown notes that can be easily managed inside Obsidian.
+* AIチャットログの整理
+* Markdown形式への変換
+* Obsidian Vaultへの自動保存
+* 日付・タイトル付きノートの生成
+* 会話内容のナレッジ化
 
 ---
 
-## Example Output
+## 処理の流れ
 
-Example of a generated note:
-2026-03-08 AI Conversation
-Topic
+```id="t0a8aj"
+AIチャットログ  
+↓  
+テキスト処理  
+↓  
+Markdown変換  
+↓  
+Obsidian Vaultへ保存  
+```
 
+---
+
+## 概要
+
+本ツールは、会話形式のログを整理されたMarkdownノートへ変換します。
+これにより、Obsidian上で検索・整理しやすい形で情報を管理できるようになります。
+
+---
+
+## 出力例
+
+生成されるノート例：
+2026-03-08 AI Conversation Topic
+
+```id="0f9pyd"
 How to retrieve weather data using Python
 
 Notes
 
-Use the Japan Meteorological Agency historical data page
-
-Data can be downloaded in CSV format
-
-Python can automate the retrieval process
-
+- Use the Japan Meteorological Agency historical data page
+- Data can be downloaded in CSV format
+- Python can automate the retrieval process
+```
 
 ---
 
-## Use Cases
+## 利用シーン
 
-- Organizing knowledge from AI conversations  
-- Storing technical notes  
-- Keeping learning logs  
-- Saving ideas for later reference  
-
----
-
-## Tech Stack
-
-- Python  
-- Markdown  
-- Obsidian  
+* AIとの会話内容の整理
+* 技術メモの保存
+* 学習ログの管理
+* アイデアのストック
 
 ---
 
-## Motivation
+## 技術構成
 
-AI conversations are a valuable source of information, but chat history alone is not suitable for structured knowledge management.
+* Python
+* Markdown
+* Obsidian
 
-This project was created to transform AI interactions into a reusable personal knowledge base by converting chat logs into well-structured Markdown notes compatible with Obsidian.
+---
 
-## Usage
+## 背景・目的
 
-1. Export your ChatGPT data and obtain `conversations.json`.
-2. Place the file in the same directory as `chat_to_obsidian.py`.
-3. Run the script.
+AIとの対話は有益な情報源ですが、そのままのログでは体系的な知識管理には適していません。
 
+本プロジェクトでは、チャットログを構造化されたMarkdownノートに変換することで、AIとの対話を再利用可能なナレッジとして蓄積する仕組みを実現しました。
+
+---
+
+## 使い方
+
+```id="e2ux5n"
+1. ChatGPTのデータをエクスポートし、conversations.jsonを取得する
+2. chat_to_obsidian.py と同じフォルダに配置する
+3. スクリプトを実行する
 
 python chat_to_obsidian.py
+```
 
+実行後、outputフォルダにMarkdownファイルが生成されます。
 
-Markdown files will be generated in the `output` folder.
+## リポジトリ構成
+
+```
+ai-chat-log-to-obsidian/
+├ chat_to_obsidian.py    # チャットログをMarkdownに変換するメインスクリプト
+├ README.md
+└ .gitignore
+```
