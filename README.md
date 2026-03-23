@@ -8,7 +8,7 @@ AIとの会話には有用な知識や技術的な情報が多く含まれてい
 ---
 ## システム構成図
 
-構成図（PDF）はこちら → 
+構成図（PDF）はこちら → https://github.com/penguin-job/aI-chat-log-to-obsidian-converter/blob/main/sys-02_portfolio.pdf
 
 ---
 
